@@ -1,10 +1,13 @@
 package webservice;
 
 import javax.xml.ws.Endpoint;
+import javax.jws.WebService;
 
-import assignment3.*;
+import assignment3.ShortMessageSender;
+import assignment3.ShortMessageSenderFactory;
 
-public class WebService {
+@WebService
+public class Webservice {
 	
 	public void sendMessage(String phone, String content){
 		ShortMessageSender sms = ShortMessageSenderFactory.createShortMessageSender();
@@ -12,7 +15,7 @@ public class WebService {
 	}
 	
 	public static void main(String []args){
-		Endpoint.publish("http://localhost:9001/Service/WebService", new WebService());
+		Endpoint.publish("http://localhost:9001/Service/Webservice", new Webservice());
 		System.out.println("WebService Server Success!");
 	}
 	

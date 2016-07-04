@@ -2,7 +2,7 @@
 <project-module
   type="WEB"
   name="ShortMessageNotificationSystem"
-  id="myeclipse.1467635960449"
+  id="myeclipse.1467637591706"
   context-root="/ShortMessageNotificationSystem"
   j2ee-spec="5.0"
   archive="ShortMessageNotificationSystem.war">
